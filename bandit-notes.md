@@ -25,3 +25,9 @@
 **bandit5**
 **Goal** Find the password in a human readable, 1033 bytes size and non executables
 **Commands Used** find . -type f -size 1033c ! -executable -exec file {} \; | grep "ASCII text"
+
+
+**bandit6**
+**Goal** Find the password in a file with owned by user bandit7 and group bandit6 , 33 bytes size anywhere
+**Commands Used**find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+
