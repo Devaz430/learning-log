@@ -15,4 +15,8 @@
  
 **bandit3**
 **Goal** Find the password in hidden files
-**Commands Used** 'ls','cat filename '
+**Commands Used** 'ls -la','cat filename '
+
+**bandit4**
+**Goal** Find the password in a human readable file
+**Commands Used** 'ls -la','file ./*'
