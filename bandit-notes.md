@@ -7,4 +7,9 @@
 
 **bandit1**
 **Goal** Find the password in dash filename
-**Commands Used** 'ls','cat "./filename" ' 
+**Commands Used** 'ls','cat ./filename '
+
+**bandit2**
+**Goal** Find the password in spaced filename
+**Commands Used** 'ls','cat "./filename" '
+ 
