@@ -13,3 +13,6 @@
 **Goal** Find the password in spaced filename
 **Commands Used** 'ls','cat "./filename" '
  
+**bandit3**
+**Goal** Find the password in hidden files
+**Commands Used** 'ls','cat filename '
