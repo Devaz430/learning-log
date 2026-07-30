@@ -20,3 +20,8 @@
 **bandit4**
 **Goal** Find the password in a human readable file
 **Commands Used** 'ls -la','file ./*'
+
+
+**bandit5**
+**Goal** Find the password in a human readable, 1033 bytes size and non executables
+**Commands Used** find . -type f -size 1033c ! -executable -exec file {} \; | grep "ASCII text"
