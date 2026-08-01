@@ -38,3 +38,8 @@
 **bandit8**
 **Goal** The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
 **Commands Used**sort data.txt | uniq -c
+
+**bandit9**
+**Goal**  The password for the next level is stored in the file data.txt in one of the few human-readable strings,
+  preceded by several ‘=’ characters.
+**Commands Used**strings data.txt | grep "=="
