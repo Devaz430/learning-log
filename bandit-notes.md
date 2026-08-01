@@ -31,3 +31,6 @@
 **Goal** Find the password in a file with owned by user bandit7 and group bandit6 , 33 bytes size anywhere
 **Commands Used**find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 
+**bandit7**
+**Goal** Find the password in a file data.txt next to the word millionth
+**Commands Used**grep "millionth" data.txt
