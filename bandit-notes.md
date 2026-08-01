@@ -34,3 +34,7 @@
 **bandit7**
 **Goal** Find the password in a file data.txt next to the word millionth
 **Commands Used**grep "millionth" data.txt
+
+**bandit8**
+**Goal** The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+**Commands Used**sort data.txt | uniq -c
