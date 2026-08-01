@@ -43,3 +43,8 @@
 **Goal**  The password for the next level is stored in the file data.txt in one of the few human-readable strings,
   preceded by several ‘=’ characters.
 **Commands Used**strings data.txt | grep "=="
+
+
+**bandit10**
+**Goal** The password for the next level is stored in the file data.txt, which contains base64 encoded data
+**Commands Used**base64 -d data.txt
