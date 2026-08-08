@@ -68,3 +68,8 @@ letters have been rotated by 13 positions
 **bandit14**
 **Goal** The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
 **Commands Used** nc localhost 30000
+
+**bandit15**
+**Goal** The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost 
+using SSL/TLS encryption.
+**Commands Used** openssl s_client -connect localhost:30001
