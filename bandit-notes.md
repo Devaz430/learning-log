@@ -58,3 +58,8 @@ letters have been rotated by 13 positions
 **Goal** The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed
 **Commands Used** copied data.txt to /tmp folder and renamed the file using mv and unwrapped each layer after checking file type until I
  get ASCII type. I used gunzip, tar, bunzip2 commands
+
+
+**bandit13**
+**Goal** you get a private SSH key that can be used to log into the next level
+**Commands Used** ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220..after copying sshkey.private to local folder
