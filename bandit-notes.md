@@ -63,3 +63,8 @@ letters have been rotated by 13 positions
 **bandit13**
 **Goal** you get a private SSH key that can be used to log into the next level
 **Commands Used** ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220..after copying sshkey.private to local folder
+
+
+**bandit14**
+**Goal** The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+**Commands Used** nc localhost 30000
