@@ -53,3 +53,8 @@
 **Goal** The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) 
 letters have been rotated by 13 positions
 **Commands Used** tr 'A-Za-z' 'N-ZA-Mn-za-m'<data.txt
+
+**bandit12**
+**Goal** The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed
+**Commands Used** copied data.txt to /tmp folder and renamed the file using mv and unwrapped each layer after checking file type until I
+ get ASCII type. I used gunzip, tar, bunzip2 commands
