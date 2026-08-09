@@ -73,3 +73,7 @@ letters have been rotated by 13 positions
 **Goal** The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost 
 using SSL/TLS encryption.
 **Commands Used** openssl s_client -connect localhost:30001
+
+**bandit16**
+**Goal** The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000
+**Commands Used** nmap -p 31000-32000 localhost, openssl s_client -connect localhost:31790 -quiet
