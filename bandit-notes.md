@@ -81,3 +81,7 @@ using SSL/TLS encryption.
 **bandit17**
 **Goal** The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
 **Commands Used** diff passwords.new passwords.old
+
+**bandit18**
+**Goal** The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
+**Commands Used** ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"
