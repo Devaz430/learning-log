@@ -85,3 +85,7 @@ using SSL/TLS encryption.
 **bandit18**
 **Goal** The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
 **Commands Used** ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"
+
+**bandit19**
+**Goal:** Use a setuid binary in the home directory to read the next level's password.
+**Commands used:** `./bandit20-do cat /etc/bandit_pass/bandit20` (after checking usage with `./bandit20-do`)
