@@ -77,3 +77,7 @@ using SSL/TLS encryption.
 **bandit16**
 **Goal** The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000
 **Commands Used** nmap -p 31000-32000 localhost, openssl s_client -connect localhost:31790 -quiet
+
+**bandit17**
+**Goal** The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
+**Commands Used** diff passwords.new passwords.old
